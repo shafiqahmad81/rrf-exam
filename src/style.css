@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-
-
-
-
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 
 
@@ -17,13 +16,46 @@
   --breakpoint-1xl: 90rem;    /* 1440px */
 
   /* colors */
-  --color-primary: #000000;
-  --color-secondary: #EDEDED;
-  --color-forground-primary: #FFFFFF;
-  --color-forground-secondary: #909090;
-  --color-footer: #CFCFCF;
-  --color-forbackground-gray: #353535;
-  --color-forbackground-gray-light: #F6F6F6;
+  --color-primary: #1F1F1F;
+  --color-secondary: #FFD4D0;
+  --color-red: #FC3314;
+  --color-gray: #F7F7F7;
+  --color-dark-gray: #8D8D8D;
+  --color-medium-gray: #E1E1E1;
+}
+
+
+progress {
+  accent-color: #b16e16; /* Tailwind's bg-green-500 */
+}
+
+body{
+  @apply font-Montserrat text-sm text-primary font-normal leading-[1.5] min-w-80 scroll-smooth
+}
+button{
+  @apply cursor-pointer
+}
+
+@layer base{
+  h1{
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold
+  }
+  h2{
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold 
+  }
+  h5{
+    @apply text-xl font-bold
+  }
+  p{
+    @apply text-base 
+  }
+}
+
+
+@layer components{
+  .btn{
+    @apply bg-primary text-sm md:text-base font-bold text-center text-white border border-primary px-4 sm:px-6 py-3 hover:bg-red hover:border-red transition-all duration-500 
+  }
 }
 
 
