@@ -46,6 +46,9 @@ button{
   h5{
     @apply text-xl font-bold
   }
+  h6{
+    @apply text-base leading-[150%] font-bold
+  }
   p{
     @apply text-base 
   }
