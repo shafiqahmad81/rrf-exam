@@ -35,6 +35,23 @@ body{
 button{
   @apply cursor-pointer
 }
+.swiper-button-prev{
+  padding-right: 5px;
+}
+.swiper-button-next{
+  padding-left: 10px;
+}
+.swiper-button-prev, .swiper-button-next{
+  margin-top: -75px;
+  color: var(--color-primary);
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 26px;
+  font-weight: 700;
+  
+}
+
+
 
 @layer base{
   h1{
