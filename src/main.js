@@ -11,3 +11,20 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+// menu responcive
+
+const mainMenu = document.getElementById('menu');
+const hamburgerIcon = document.getElementById('hamburger');
+const closeIcon = document.getElementById('close')
+
+hamburgerIcon.addEventListener('click', () => {
+  mainMenu.classList.remove('hidden');
+  hamburgerIcon.classList.add('hidden');
+  closeIcon.classList.remove('hidden')
+})
+closeIcon.addEventListener('click', () => {
+  mainMenu.classList.add('hidden');
+  hamburgerIcon.classList.remove('hidden');
+  closeIcon.classList.add('hidden')
+})

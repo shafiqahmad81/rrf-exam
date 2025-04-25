@@ -19,26 +19,39 @@
       </div>
 
       <!-- Header -->
-      <nav class="flex items-center justify-between pt-10 pb-8 relative z-20">
-        <div class="grow md:grow-0">
+      <nav class="flex md:items-center justify-between pt-10 pb-8 relative z-20">
+        <a href="#">
           <img src="src/assets/icon/logo.png" alt="logo">
+        </a>
+        <div id="menu" class="hidden md:block mt-12 md:mt-0 -ml-20 md:ml-0">
+          <ul class="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+            <li class="text-lg font-bold hover:text-primary/60 transition-all duration-500"><a href="#about">About</a>
+            </li>
+            <li class="text-lg font-bold hover:text-primary/60 transition-all duration-500"><a
+                href="#service">Services</a>
+            </li>
+            <li class="text-lg font-bold hover:text-primary/60 transition-all duration-500"><a
+                href="#protfolio">Portfolio</a>
+            </li>
+            <li class="text-lg font-bold hover:text-primary/60 transition-all duration-500"><a href="#blog">Blog</a>
+            </li>
+            <button class="btn md:hidden">Let’s Talk</button>
+          </ul>
         </div>
-        <ul class="hidden md:flex items-center gap-8 ">
-          <li class="text-lg font-bold hover:text-primary/60 transition"><a href="#about">About</a></li>
-          <li class="text-lg font-bold hover:text-primary/60 transition"><a href="#service">Services</a></li>
-          <li class="text-lg font-bold hover:text-primary/60 transition"><a href="#protfolio">Portfolio</a></li>
-          <li class="text-lg font-bold hover:text-primary/60 transition"><a href="#blog">Blog</a></li>
-        </ul>
-        <div class="md:hidden mr-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
+        <div class="mt-3 md:mt-0">
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
+          <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
 
+          <button class="btn hidden md:block">Let’s Talk</button>
         </div>
-        <button class="btn">Let’s Talk</button>
       </nav>
-      <div class="flex flex-col md:flex-row gap-12 pt-7">
+      <div class="flex flex-col md:flex-row gap-12 md:pt-7">
         <div class="w-full md:w-[39.948%] order-2 md:order-1 pb-5 flex flex-col items-center justify-center -mt-[25px]">
           <div>
             <span class="text-xl">UX Designer</span>
@@ -48,7 +61,7 @@
             <p class="pt-[18px]">Welcome to my portfolio of captivating digital experiences. Explore my work and let's
               create something
               extraordinary together.</p>
-            <div class="flex gap-5 mt-[46px]">
+            <div class="flex flex-col sm:flex-row items-center gap-5 mt-[46px]">
               <a class="btn w-[177px]" href="#">Hire Me</a>
               <a class="btn bg-secondary text-primary w-[177px] hover:bg-red hover:text-white" href="#">Portfolio</a>
             </div>
@@ -461,15 +474,17 @@
 
 
   <!-- Form section -->
-  <section class="bg-secondary relative py-10 sm:py-16 lg:py-32">
-    <div class=" w-52 h-52 xl:w-56 xl:h-56 bg-red rounded-full absolute top-1/2 -left-36 -translate-y-1/2">
+  <section class="bg-secondary relative pt-10 sm:pt-16 lg:pt-32 pb-10 sm:pb-16 lg:pb-[123px]">
+    <div
+      class=" w-[221px] h-[221px] xl:w-56 xl:h-56 bg-red rounded-full absolute top-[47%] -left-[135px] -translate-y-1/2">
     </div>
     <div class="container relative z-10 flex flex-col md:flex-row gap-10 xl:gap-[60px]">
       <div class="w-full md:w-1/2 flex flex-col justify-between gap-10">
         <div>
-          <div class="space-y-4">
+          <div class="space-y-6 mt-0.5">
             <h2>Get in Touch</h2>
-            <p>Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing
+            <p class="leading-6">Have a question or a project in mind? I'd love to hear from you. Let's chat and make
+              something amazing
               together.</p>
           </div>
           <div class="space-y-8 mt-16">
@@ -477,19 +492,19 @@
               <img src="src/assets/icon/phone.png" alt="phone">
               <p>+1205 5872 321</p>
             </a>
-            <a href="#" class="flex gap-4 items-center">
-              <img src="src/assets/icon/email.png" alt="email">
+            <a href="#" class="flex gap-5 items-center">
+              <img class="-mt-0.5" src="src/assets/icon/email.png" alt="email">
               <p>contact@sarajonesdesign.com</p>
             </a>
             <a href="#" class="flex gap-4 items-center">
-              <img src="src/assets/icon/location.png" alt="location">
+              <img class="-mt-0.5" src="src/assets/icon/location.png" alt="location">
               <p>1234 Design Street,Creativeville, Webland,Imaginary State, 98765</p>
             </a>
           </div>
         </div>
         <div class="flex items-center gap-6">
           <a href="#"
-            class="w-8 h-8 bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
+            class="w-[30px] h-[30px] bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
             <svg class=" fill-primary group-hover:fill-white transition-all duration-500"
               xmlns="http://www.w3.org/2000/svg" width="15" height="13" fill="none">
               <path
@@ -497,7 +512,7 @@
             </svg>
           </a>
           <a href="#"
-            class="w-8 h-8 bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
+            class="w-[30px] h-[30px] bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
             <svg class=" fill-primary group-hover:fill-white transition-all duration-500"
               xmlns="http://www.w3.org/2000/svg" width="15" height="16" fill="none">
               <path fill-rule="evenodd"
@@ -506,7 +521,7 @@
             </svg>
           </a>
           <a href="#"
-            class="w-8 h-8 bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
+            class="w-[30px] h-[30px] bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
             <svg class=" fill-primary group-hover:fill-white transition-all duration-500"
               xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
               <path
@@ -514,7 +529,7 @@
             </svg>
           </a>
           <a href="#"
-            class="w-8 h-8 bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
+            class="w-[30px] h-[30px] bg-white rounded-full flex items-center justify-center group hover:bg-red transition-all duration-500">
             <svg xmlns="http://www.w3.org/2000/svg"
               class=" fill-primary group-hover:fill-white transition-all duration-500" width="8" height="16"
               fill="none">
@@ -526,27 +541,27 @@
       </div>
       <div class="w-full md:w-1/2">
         <form action="#" method="POST" class="space-y-6">
-          <div>
+          <div class="-mt-1">
             <input type="text" placeholder="First name"
-              class="w-full px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
+              class="w-full text-sm leading-[150%] text-dark-gray px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
           </div>
 
-          <div>
+          <div class="-mt-[3px]">
             <input type="email" placeholder="Email"
-              class="w-full px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
+              class="w-full text-sm leading-[150%] text-dark-gray px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
           </div>
 
-          <div>
+          <div class="-mt-px">
             <input type="tel" placeholder="Phone number"
-              class="w-full px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
+              class="w-full text-sm leading-[150%] text-dark-gray px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500">
           </div>
 
-          <div>
-            <textarea placeholder="Your message" rows="4"
-              class="w-full px-4 py-3.5 border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500"></textarea>
+          <div class="-mt-0.5">
+            <textarea placeholder="Your message" rows="6"
+              class="w-full text-sm leading-[150%] text-dark-gray px-4 pt-3.5 pb-[25px] border border-secondary bg-white focus:outline-none focus:ring-2 focus:ring-red/20 transition-all duration-500"></textarea>
           </div>
 
-          <button type="submit" class="btn w-full sm:w-60 mt-2">
+          <button type="submit" class="btn w-full sm:w-[233px] mt-0.5">
             Send Message
           </button>
         </form>
@@ -560,18 +575,18 @@
       <div
         class="max-w-[765px] mx-auto mb-10 sm:mb-16 flex flex-col sm:flex-row items-center justify-between text-xl font-bold">
         <ul class="order-2 sm:order-1 text-center sm:flex gap-8">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a class="hover:text-white/60 transition-all duration-500" href="#">About</a></li>
+          <li><a class="hover:text-white/60 transition-all duration-500" href="#">Services</a></li>
         </ul>
-        <div class="order-1 sm:order-2">
+        <a href="#" class="order-1 sm:order-2 ">
           <img src="src/assets/icon/footer-logo.png" alt="footer-logo">
-        </div>
-        <ul class="order-3 text-center sm:flex gap-8">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
+        </a>
+        <ul class="order-3 text-center sm:flex gap-8 lg:pr-1">
+          <li><a class="hover:text-white/60 transition-all duration-500" href="#">Portfolio</a></li>
+          <li><a class="hover:text-white/60 transition-all duration-500" href="#">Blog</a></li>
         </ul>
       </div>
-      <div class="text-center space-y-9">
+      <div class="text-center space-y-[30px]">
         <p>Follow me on social media:</p>
         <div class="flex items-center justify-center gap-8">
           <a href="#" class="rounded-full flex items-center justify-center group">
